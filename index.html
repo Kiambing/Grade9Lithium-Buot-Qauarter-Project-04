@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title> Buot-Quarter Project 04 </title>
+		<link rel="stylesheet" href= "style.css">
+	</head>
+	
+	<body>
+		<div class="main">
+			<nav>
+				<div class="nav-links">
+						<ul>
+							<li> <a href= "C:\Users\Lenovo\OneDrive\Desktop\Computer Science\index.html"> Home </a></li>
+							<li> <a href= "C:\Users\Lenovo\OneDrive\Desktop\Computer Science\Pages\What.html"> What </a></li>
+							<li> <a href= "C:\Users\Lenovo\OneDrive\Desktop\Computer Science\Pages\Economic Impact.html"> Economic Impact </a></li>
+							<li> <a href= "C:\Users\Lenovo\OneDrive\Desktop\Computer Science\Pages\How.html">  5G vs. 4G </a></li>
+						</ul>
+				</div>
+			</nav>
+
+			<div  class="Information">
+			<div class="overlay"> </div>
+				<img src="C:\Users\Lenovo\OneDrive\Desktop\Computer Science\Images\Logo1.0.png" class="topic">
+				<div id="circle"> 
+
+					<div class="feature EnhanceSpeed">
+						<img src="C:\Users\Lenovo\OneDrive\Desktop\Computer Science\Images\Enhanced Speed.png">
+						
+						<div>
+							<h1> Enhanced <br> Speed </h1>
+						
+							</div>
+					</div>
+
+					<div class="feature LowLatency">
+						<img src="C:\Users\Lenovo\OneDrive\Desktop\Computer Science\Images\Low Latency.png">
+						
+						<div>
+							<h1> Low <br> Latency </h1>
+						
+							</div>
+					</div>
+
+					<div class="feature MassiveDeviceConnectivity">
+						<img src="C:\Users\Lenovo\OneDrive\Desktop\Computer Science\Images\Massive Device Connectivity.png">
+						
+						<div>
+							<h1> Massive <br> Device <br> Connectivity </h1>
+						</div>
+
+					</div>
+
+					<div class="feature NetworkSlicing">
+						<img src="C:\Users\Lenovo\OneDrive\Desktop\Computer Science\Images\Network Slicing.png">
+						
+						<div>
+							<h1> Network <br> Slicing </h1>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="controls">
+				<img src="C:\Users\Lenovo\OneDrive\Desktop\Computer Science\Images\ArrowUp.png" id="Up">
+				<h2> Features of 5G </h2>
+				<img src="C:\Users\Lenovo\OneDrive\Desktop\Computer Science\Images\ArrowDown.png" id="Down">
+			</div>
+
+		</div>
+
+		<script>
+			var circle = document.getElementById("circle");
+			var Up = document.getElementById("Up");
+			var Down = document.getElementById("Down");
+
+			var rotateValue = circle.style.transform;
+			var rotateSum;
+
+
+
+			Up.onclick = function()
+			{
+				rotateSum = rotateValue + "rotate(-90deg)";
+				circle.style.transform = rotateSum;
+				rotateValue = rotateSum;
+			}
+			
+			Down.onclick = function()
+			{
+				rotateSum = rotateValue + "rotate(+90deg)";
+				circle.style.transform = rotateSum;
+				rotateValue = rotateSum;
+			}
+		</script>
+	</body>
+</html>
